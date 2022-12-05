@@ -6,8 +6,6 @@
 
 import random
 
-k = int(input('Enter power: '))
-
 def random_list(n):
     randoms = []
     for i in range(n+1):
@@ -34,6 +32,8 @@ def create_polynomial(n, randoms):
                 polynomial += f'{randoms[i]} = 0'
         n -= 1
     return(polynomial)    
+
+k = int(input('Enter power: '))
 
 randoms = random_list(k)
 polynomial = create_polynomial(k, randoms)
